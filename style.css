@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: Geist;
+}
+
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-nav{
+    display: flex;
+    padding-inline: 120px;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 68);
+    height: 100px;
+    padding-block: 20xp;
+    align-items: center;
+
+}
+
+
+.logo > img{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+
+    
+}
+
+li > a{
+    color: white;
+     text-decoration: none;
+     font-size: 16px;
+}
+
+.Contact_support{
+    background-color: rgb(117, 228, 117);
+    padding-inline: 20px;
+    color: white;
+    padding-block: 10px;
+    border-radius: 10px;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 120px;
+    padding-block: 40px;
+    gap: 20px;
+    background-color: rgba(13, 2, 110, 0.452);
+    
+}
+
+.hero-section h2{
+    font-size: 50px;
+    color: white;
+}
+
+.hero-section p{
+    max-width: 700px;
+    color: white;
+}
+
+em{
+    color: orangered;
+    font-style: normal;
+}
+
+.btn_section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_section button{
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+
+}
+
+.btnone{
+    background-color: rgb(115, 240, 115);
+    border: none;
+    outline: none;
+   
+}
+
+.btntwo{
+    background-color: rgb(241, 123, 25);
+    border: none;
+    outline: none;
+   
+}
+
+.services-section{
+    display: flex;
+    justify-content: center;
+    padding-block: 40px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
+    margin: 0 auto;
+    gap: 20px;
+    
+}
+
+.card{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(194, 192, 192);
+    border-radius: 12px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+footer{
+   
+    padding-inline: 120px;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer_logo{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.footer_bottom{
+    border-top: 1px solid grey;
+    padding-block: 20px;
+}
+
+
+@media (max-width:640px){
+    .nav{
+        display: none;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1,300px);
+        gap: 20px;
+    }
+    
+    .footer_logo{
+        flex-direction: column;
+    }
+
+    .hero-section{
+      padding-inline: 60px;
+    }
+
+    .hero-section h2{
+        font-size: 25px;
+    }
+
+    .hidden{
+        display: block;
+        color: white;
+        filter: invert();
+    }
+
+    .main-nav{
+          padding-inline: 50px;
+    }
+
+
+
+}
+
+
+
